@@ -33,3 +33,4 @@ let notLikeThis = {
 };
 
 console.log(notLikeThis.name);
+console.log(notLikeThis.readingList[2]);
