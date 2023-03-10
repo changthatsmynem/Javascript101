@@ -23,3 +23,13 @@ artistList[2] = "inuyasha";
 console.log(artistList);
 
 console.log(artistList[0]);
+
+let notLikeThis = {
+  name: "Chang",
+  surname: "Spivak",
+  age: 25,
+  email: "changspivak@gmail.com",
+  readingList: ["ethics", "madness and civilization", "wealth of nations"],
+};
+
+console.log(notLikeThis.name);
