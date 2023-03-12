@@ -1,14 +1,14 @@
 //String
 console.log("Hello World!");
 
-let email = "donovanlak@gmail.com";
+let email = "nathapab.jirasaweksil@gmail.com";
 console.log(email);
 
 let myAge = 30;
 
 //string concatenation
-let firstName = "Lak";
-let lastName = "Donovan";
+let firstName = "Chang";
+let lastName = "Wonderland";
 
 let fullName = firstName + " " + lastName;
 console.log(fullName);
