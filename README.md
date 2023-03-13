@@ -1,0 +1,3 @@
+#JAVASCRIPT PRACTICE#
+
+Basic Javascript
