@@ -1,3 +1,2 @@
-#JAVASCRIPT PRACTICE#
-
+#JAVASCRIPT101
 Basic Javascript
