@@ -144,3 +144,20 @@ const checkBMI = function bmi(height, weight) {
 };
 // const checkBMI = bmi(height,weight);
 console.log(checkBMI(height, weight));
+
+//Callback Test
+const check = (input, callback) => {
+  if (input === "No") {
+    return callback(new Error("Error"));
+  }
+  return callback(null, input);
+};
+
+function handleError(error, data) {
+  if (error) {
+    return console.error(error);
+  }
+  return console.log(data);
+}
+
+check("No", handleError);
