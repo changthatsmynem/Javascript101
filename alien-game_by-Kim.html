@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                background-color: #777777;
+                font-size: 4rem;
+                font-weight: 700;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                /* justify-content: center; */
+                margin-top: 55px;
+                color: #fff;
+                gap: 30px;
+                height: 93vh;
+            }
+
+            button {
+                border: none;
+                background-color: #000;
+                padding: 20px;
+                font-size: 3rem;
+                color: #fff;
+                width: 750px;
+                border-radius: 25px;
+            }
+
+            div {
+                display: flex;
+                gap: 15px;
+                /* justify-content: space-between; */
+            }
+
+            div>h1 {
+                font-size: 2rem;
+                align-self: center;
+            }
+        </style>
+        <title>Finding Alien!</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>There are alien among us</h1>
+            <div style="width: 30%">
+                <img id="amongus"
+                    src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"
+                    width="200px" height="auto" />
+            </div>
+        </div>
+        <button onclick="addAlien()">Add Alien</button>
+        <button onclick="findAlien()">Finding!</button>
+        <p id="text"></p>
+        <script src="./finding-alien_by-Kim.js"></script>
+    </body>
+
+</html>
