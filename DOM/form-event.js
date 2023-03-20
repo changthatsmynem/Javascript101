@@ -7,16 +7,26 @@ let submitButton = document.querySelector(".submit-button");
 let form = document.getElementById("form");
 
 const checkValidation = (e) => {
+  e.preventDefault();
   if (
     firstName.value === "" &&
     lastName.value === "" &&
     email.value === "" &&
     password.value === ""
   ) {
-    e.preventDefault();
-    err.innerHTML = "Please Enter a valid form";
+    alert("Need an input in order to submit the form.");
+    err.innerHTML = "Please Enter a valid form.";
+  } else if (/@/.test(email)) {
+    alert("Please enter a valid email address.");
+    err.innerHTML = "Wrong syntax of an email address.";
+  } else if (password.length < 6) {
+    alert("Password needs to be more than 5 characters long.");
+  } else {
+    err.innerHTML = "Form has been submitted.";
   }
 };
+
+form.addEventListener("submit", checkValidation);
 
 // form.addEventListener("submit", function (event) {
 //   const emailInput = document.getElementById("email");
@@ -29,18 +39,18 @@ const checkValidation = (e) => {
 // });
 
 //K'Luk Code
-form.addEventListener("submit", (e) => {
-  let message = [];
-  if (firstName.value === "" || firstName.value === null) {
-    message.push("Name is required");
-  }
+// form.addEventListener("submit", (e) => {
+//   let message = [];
+//   if (firstName.value === "" || firstName.value === null) {
+//     message.push("Name is required");
+//   }
 
-  if (message.length > 0) {
-    e.preventDefault();
-    err.innerHTML = message.join(",");
-  }
-  console.log(firstName);
-});
+//   if (message.length > 0) {
+//     e.preventDefault();
+//     err.innerHTML = message.join(",");
+//   }
+//   console.log(firstName);
+// });
 
 // const form = document.getElementById("form");
 // const fname = document.getElementById("fname");
