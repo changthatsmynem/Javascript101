@@ -19,7 +19,7 @@ const checkValidation = (e) => {
   } else if (/@/.test(email)) {
     alert("Please enter a valid email address.");
     err.innerHTML = "Wrong syntax of an email address.";
-  } else if (password.length < 6) {
+  } else if (password.length < 8) {
     alert("Password needs to be more than 5 characters long.");
   } else {
     err.innerHTML = "Form has been submitted.";
