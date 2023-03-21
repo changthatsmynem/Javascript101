@@ -16,13 +16,14 @@ const checkValidation = (e) => {
   ) {
     alert("Need an input in order to submit the form.");
     err.innerHTML = "Please Enter a valid form.";
-  } else if (/@/.test(email)) {
+  } else if (!email.value.split("").includes("@")) {
     alert("Please enter a valid email address.");
     err.innerHTML = "Wrong syntax of an email address.";
-  } else if (password.length < 8) {
-    alert("Password needs to be more than 5 characters long.");
+  } else if (password.value.length < 8) {
+    alert("Password needs at least 8 characters long.");
   } else {
     err.innerHTML = "Form has been submitted.";
+    form.reset();
   }
 };
 
