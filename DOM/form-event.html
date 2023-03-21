@@ -12,26 +12,34 @@
     <body>
         <div class="container">
             <div class="form-wrap">
-                <form id="form" action="">
+                <form id="form" action="POST">
                     <h1><span>Register</span></h1>
 
                     <div class="input">
+                        <label for="fname">First Name</label>
                         <input type="text" id="fname" placeholder="First Name">
+                        <small id="error"></small>
                     </div>
                     <div class="input">
+                        <label for="lname">Last Name</label>
                         <input type="text" id="lname" placeholder="Last Name">
+                        <small id="error"></small>
                     </div>
                     <div class="input">
+                        <label for="email">Email Address</label>
                         <input type="text" id="email" placeholder="Email address">
+                        <small id="error"></small>
                     </div>
                     <div class="input">
-                        <input type="text" id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <small id="error"></small>
                     </div>
                     <div>
                         <p>Please, make sure your details are correct</p>
                     </div>
                     <div class="submit-button">
-                        <button type="submit">Submit</button>
+                        <button id='submit' type="submit">Submit</button>
                     </div>
                     <div id="error"></div>
                 </form>
